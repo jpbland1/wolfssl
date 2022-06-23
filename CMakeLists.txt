@@ -20,7 +20,7 @@ if(IS_DIRECTORY ${IDF_PATH}/components/freertos/FreeRTOS-Kernel/)
     set(COMPONENT_ADD_INCLUDEDIRS
         "."
         "./include"
-        "../freertos/FreeRTOS-Kernel/include/freertos"
+        "${IDF_PATH}/components/freertos/FreeRTOS-Kernel/include/freertos"
        "${WOLFSSL_ROOT}"
        )
 else()
@@ -28,7 +28,7 @@ else()
    set(COMPONENT_ADD_INCLUDEDIRS
        "."
        "./include"
-       "../freertos/include/freertos"
+       "${IDF_PATH}/components/freertos/include/freertos"
        "${WOLFSSL_ROOT}"
       )
 endif()
