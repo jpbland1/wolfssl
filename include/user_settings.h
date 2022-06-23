@@ -57,7 +57,6 @@
 #define WOLFSSL_SHA512
 #define HAVE_ECC
 #define HAVE_CURVE25519
-#define CURVE25519_SMALL
 #define HAVE_ED25519
 
 /* when you want to use pkcs7 */
@@ -95,7 +94,7 @@
 #endif
 
 /* debug options */
-/* #define DEBUG_WOLFSSL */
+//#define DEBUG_WOLFSSL
 /* #define WOLFSSL_ESP32WROOM32_CRYPT_DEBUG */
 /* #define WOLFSSL_ATECC508A_DEBUG          */
 
@@ -106,7 +105,7 @@
 /* #define XTIME time */
 
 /* when you want not to use HW acceleration */
-/* #define NO_ESP32WROOM32_CRYPT */
+//#define NO_ESP32WROOM32_CRYPT
 /* #define NO_WOLFSSL_ESP32WROOM32_CRYPT_HASH*/
 /* #define NO_WOLFSSL_ESP32WROOM32_CRYPT_AES */
 /* #define NO_WOLFSSL_ESP32WROOM32_CRYPT_RSA_PRI */
@@ -116,7 +115,6 @@
 
 // MY SETTINGS
 #define WOLFSSL_SHA3
-#define WOLFSSL_SHA3_SMALL
 #define WOLFSSL_SHAKE256
 #define HAVE_SHA512
 #define HAVE_DH
@@ -126,9 +124,17 @@
 #define HAVE_AES_CBC
 #define WOLFSSL_AES_DIRECT
 #define WOLFSSL_AES_COUNTER
-#define HAVE_DES3
-#define WOLFSSL_ALLOW_SSLV3
+//#define WOLFSSL_ALLOW_SSLV3
 #define KEEP_PEER_CERT
 #define WOLFSSL_KEY_GEN
 #define WOLFSSL_CERT_GEN
-#define NO_WOLFSSL_ESP32WROOM32_CRYPT_AES
+#define RSA_LOW_MEM
+#define CURVED25519_SMALL
+#define SMALL_SESSION_CACHE
+#define WOLFSSL_SMALL_STACK
+#define WOLFSSL_SMALL_CERT_VERIFY
+//#define NO_WOLFSSL_ESP32WROOM32_CRYPT_AES
+#define MAX_PSK_ID_LEN 256
+//#define WOLFSSL_SP_MATH
+//#define WOLFSSL_HAVE_SP_RSA
+//#define NO_WOLFSSL_ESP32WROOM32_CRYPT_RSA_PRI

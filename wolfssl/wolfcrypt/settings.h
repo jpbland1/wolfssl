@@ -2724,6 +2724,8 @@ extern void uITRON4_free(void *p) ;
     #define WOLFSSL_ASYNC_IO
 #endif
 
+#undef USE_FAST_MATH
+
 #ifdef __cplusplus
     }   /* extern "C" */
 #endif
